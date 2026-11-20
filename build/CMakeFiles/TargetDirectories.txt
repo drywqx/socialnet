@@ -1,0 +1,3 @@
+/home/vboxuser/socialnet/build/CMakeFiles/socialnet.dir
+/home/vboxuser/socialnet/build/CMakeFiles/edit_cache.dir
+/home/vboxuser/socialnet/build/CMakeFiles/rebuild_cache.dir

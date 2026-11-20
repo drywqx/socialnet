@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/vboxuser/socialnet/build",
+  "command": "/usr/bin/g++  -I/home/vboxuser/socialnet/src -g -std=gnu++17 -o CMakeFiles/socialnet.dir/src/main.cpp.o -c /home/vboxuser/socialnet/src/main.cpp",
+  "file": "/home/vboxuser/socialnet/src/main.cpp",
+  "output": "CMakeFiles/socialnet.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/vboxuser/socialnet/build",
+  "command": "/usr/bin/g++  -I/home/vboxuser/socialnet/src -g -std=gnu++17 -o CMakeFiles/socialnet.dir/src/user.cpp.o -c /home/vboxuser/socialnet/src/user.cpp",
+  "file": "/home/vboxuser/socialnet/src/user.cpp",
+  "output": "CMakeFiles/socialnet.dir/src/user.cpp.o"
+}
+]
