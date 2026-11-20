@@ -12,32 +12,26 @@ private:
     bool has_value_ = false;
 
 public:
-    // Пустой конструктор
     MyOptional() noexcept : has_value_(false) {}
 
-    // Конструктор копирования значения (из User)
     MyOptional(const T& value) : has_value_(true) {
-        new (data_) T(value); // Placement new
+        new (data_) T(value);
     }
 
-    // Конструктор копирования самого Optional (чтобы передавать по значению)
     MyOptional(const MyOptional& other) : has_value_(other.has_value_) {
         if (has_value_) {
             new (data_) T(*reinterpret_cast<const T*>(other.data_));
         }
     }
 
-    // Деструктор
     ~MyOptional() {
         if (has_value_) {
             reinterpret_cast<T*>(data_)->~T();
         }
     }
 
-    // Проверка на наличие
     bool has_value() const noexcept { return has_value_; }
 
-    // Получение значения
     T& value() & {
         if (!has_value_) throw std::runtime_error("No value!");
         return *reinterpret_cast<T*>(data_);
